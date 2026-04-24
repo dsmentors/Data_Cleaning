@@ -495,6 +495,8 @@ const COMPARE = {
       { t:'Mean Imputation',         w:'MCAR, roughly normal distribution',    r:'Reduces variance, distorts distribution', v:'Baseline Only',    vc:'warn' },
       { t:'Median Imputation',       w:'MCAR, skewed distribution',            r:'Safer than mean for skewed data',         v:'Robust Baseline',  vc:'warn' },
       { t:'Mode Imputation',         w:'Categorical columns (MCAR)',           r:'Over-represents one category',            v:'Cat. Baseline',    vc:'warn' },
+      { t:'forward fill Imputation',         w:'Time-series, sequential dependency exists',           r:'Artificial repetition, stale values',            v:'Sequence-Based',    vc:'warn' },
+      { t:'Backward fill Imputation',         w:'Time-series, next value is logically valid',           r:'Future leakage risk',            v:'Use Carefully',    vc:'warn' },
       { t:'Segment-Based',           w:'MAR — related column available',       r:'Group errors propagate',                  v:'Good Choice',      vc:'keep' },
       { t:'KNN Imputation',          w:'MAR, meaningful row similarity',       r:'Slow on large data, scale-sensitive',     v:'Mid-size Data',    vc:'keep' },
       { t:'Regression Imputation',   w:'Strong linear relationships exist',    r:'Overfitting, underestimates variance',    v:'Clear Relations',  vc:'keep' },
