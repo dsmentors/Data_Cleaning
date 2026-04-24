@@ -6,7 +6,7 @@ An interactive single-page web application to learn core data cleaning concepts 
 
 Live page URL here:        
 
-`https://selvamani1992.github.io/Data_Cleaning/`
+`https://dsmentors.github.io/Data_Cleaning/`
 
 ## Features
 
